@@ -1,0 +1,124 @@
+
+.vmv-body {
+  font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: var(--font-size-fluid-0);
+  line-height: 1.4;
+  color: white;
+  scrollbar-width: none;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.vmv-a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.vmv-h1 {
+  margin-bottom: 1em;
+  font-size: var(--font-size-fluid-3);
+  line-height: 1.2;
+}
+
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 40em;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+header {
+  padding: calc(0.5 + 1.5vw) 0;
+}
+
+main {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: justify;
+}
+
+main vmv-a {
+  background-image: linear-gradient(var(--link-underline-color) 0%,
+      var(--link-underline-color) 100%);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 100% 2px;
+  font-weight: bold;
+}
+
+.buttons {
+  margin-top: 2.25em;
+}
+
+.buttons--spaced {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.buttons .vmv-button {
+  margin-right: 1em;
+}
+
+.vmv-button {
+  display: inline-block;
+  border-radius: 999vw;
+  background: transparent;
+  border: 2px solid;
+  padding: .6em 1.1em;
+  transition-property: background, color;
+  transition-duration: 150ms;
+  white-space: nowrap;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.vmv-button:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.pages {
+  display: grid;
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+}
+
+.page--1 {}
+
+.page--2 {
+  background-color: rgba(0, 140, 140);
+}
+
+.page--3 {
+  background-color: rgb(6, 81, 131);
+}
+
+.page--4 {
+  background-color: rgb(160, 100, 130);
+}
+
+.vmv-image1 {
+    height: 18vw;
+    width: 24vw;
+    margin-left: 0vw;
+    margin-top: 2vw;
+
+}
+@media screen and (max-width: 1200px) {
+  .vmv-image1 {
+    height: 36vw;
+    width: 48vw;
+    margin-left: 3vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  .vmv-image1 {
+    height: 45vw;
+    width: 60vw;
+    margin: 50px 0 0 0;
+  }
+}
