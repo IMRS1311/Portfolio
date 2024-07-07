@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="icon" href="images/favicon.ico">
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:ital@1&family=Sacramento&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="static/css/styles_01.css">
+
+    </head>
+    <body class="bb">
+
+      <div class="flex-container">
+        
+        <div class="mynavbar bg1" id="myNavBar">
+
+          <div class="nav-item nav-item-01">
+                <div class="name-item name-bar">
+                  <p class="name">EMRashed</p>
+                  <img class="emr" src="images/EMR.png">
+                </div>      
+          </div>
+
+          <div class="navbar-toggler" type="button" onclick="toggleNavbar()">
+            <div class="navbar-toggler-icon"></div>
+            <div class="navbar-toggler-icon"></div>
+            <div class="navbar-toggler-icon"></div>
+          </div>
+
+          <div class="nav-item menu-bar">
+
+              <ul class="links-list" id="linksList">
+                  <li class="list-item">
+                    <a class="link-item active" aria-current="page" href="#">Home</a>
+                  </li>
+
+                  <li class="list-item">
+                    <a class="link-item" href="recents.html">Recents</a>
+                  </li>
+
+                  <li class="list-item">
+                    <a class="link-item" href="history.html">History</a>
+                  </li>
+
+                  <li class="list-item dropdown">
+                    <a class="link-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Commitment <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item vision" href="vision.html">Vision</a>
+                        <div class="vision-screen popup-screen">
+                          <img class="vmv-image" src="images/vision.png">
+                          <p class="vmv-title">
+                              <b>My Vision</b>
+                          </p>    
+                          <br>
+                          <p class="vmv-text">
+                              To leverage the power of Python and web technologies to create innovative
+                              and user-centric solutions that empower businesses and individuals,
+                              transforming their digital experiences and contributing to a more interconnected
+                              and efficient online world.
+                          </p>
+                        </div>
+                      </li>
+                      <li><a class="dropdown-item mission" href="mission.html">Mission</a>
+                        <div class="mission-screen popup-screen">
+                          <img class="vmv-image" src="images/mission.png">
+                          <p class="vmv-title">
+                            <b>My Mission</b>
+                          </p> 
+                          <br>
+                          <p class="vmv-text">
+                            To craft robust and scalable web applications using Python and modern web technologies.
+                            By combining my coding skills, problem-solving mindset, and dedication to user experience,
+                            I strive to develop solutions that streamline processes, enhance functionality,
+                            and drive digital growth for businesses of all sizes.
+                          </p>
+                        </div>
+                      </li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item values" href="values.html">Values</a>
+                          <div class="values-screen popup-screen">
+                              <img class="vmv-image2" src="images/values.png">
+                              <p class="vmv-title2">
+                                <b>My Values:</b>
+                              </p>
+                              <ul class="vmv-text2">
+                                  <li><b>Innovation:</b>Embracing new technologies and methodologies to continuously enhance the quality and functionality of web applications.</li>
+                                  <li><b>Quality:</b> Committing to delivering high-quality code and users' experiences.</li>
+                                  <li><b>Continuous Learning:</b> Pursuing up-to-date technology trends, tools, and techniques to ensure professional sustainability and growth.</li>
+                                  <li><b>User-Centricity:</b> Prioritizing the users’ experiences and needs and designing solutions that are intuitive, accessible, and responsive to their requirements.</li>
+                                  <li><b>Integrity:</b> Upholding ethical standards, maintaining transparency, honesty and building trust with clients.</li>
+                              </ul>
+                          </div>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="list-item">
+                    <a class="link-item mt-1" href="My_Contact.html"> 
+                      <button type="button" class="btn btn-primary" id="showContactButton">Get In Touch</button>
+                    </a>
+                  </li>
+              </ul>
+
+          </div>
+
+        </div>
+
+        <div class="top-container">
+            <h1 class="h-01">Hello</h1>
+            <h1 class="h-01">I'm Eslam</h1>
+            <h2 class="h-02"> Mech. Eng. & <span class="web">Python/Web</span> developer.</h2>
+            <img class="my-image1 circular" src="images/Eslam-pro1.png" alt="">
+
+            <div class="profession">
+              <p class="pro-details">Projects Interface management professional, Projects Support & CMMS Systems Engineer with more than 20 years extensive experience. And lately, Python Programmer/Web Developer.</p>
+            </div>
+
+        </div>
+
+        <div class="middle-container container-fluid" id="featured-3">
+
+            <div class="row top-row">
+                <div class="top-row-sides"></div>
+                <div class="top-row-middle">
+                <h2 class="f-title border-bottom">Things that I can do</h2>
+                </div>
+                <div class="top-row-sides"></div>
+            </div>
+
+            <div class="row next-row">
+
+                <div class="next-row-sides"></div>
+
+                <div class="next-row-middle">
+                    <div class="d-flex"> <!-- Use d-flex and justify-content-between to display divs side by side -->
+
+                        <div class="feature">
+                            <div class="feature-icon">
+                              <img src="images/web-design.png" width="40px" height="40px">
+                            </div>
+                            <h3 class="fs-title h-03">Design/ Data Analysis</h3>
+                            <h5 class="details h-05"> Maintenance & Material Management, Users, Data Analysis, Developing Standards & ADHOC reports are considered the backbone of decision making. </h5>
+                            <h4 class="fs-title h-04"><u>Reporting Tools:</u></h4>
+                            <h5 class="details h-05">Ms Excel <br> Ms Access <br> Pivoting Tables <br> Crystal Reports <br> Matplotlip <br> Seaborn <br>Plotly</h5>
+                        </div>
+
+                        <div class="feature">
+                            <div class="feature-icon d-inline-flex align-items-center justify-content-center mt-4">
+                              <img src="images/coding.png" width="40px" height="40px">
+                            </div>
+                            <h3 class="fs-title h-03">Front/Backend Developer</h3>
+                            <h5 class="details h-05"> I find myself in web development, programming and translating codes into awesome things. </h5>
+                            <h4 class="fs-title h-04"><u>Codes & Tools:</u></h4>
+                            <h5 class="details h-05">Python <br> TKinter <br> HTML <br> CSS <br> Bootstrap <br> JS, Node.JS <br> React <br> SQL <br> IC <br>& Others</h5>
+                        </div>
+
+                        <div class="feature">
+                            <div class="feature-icon d-inline-flex align-items-center justify-content-center mt-4">
+                              <img src="images/advisor.png" width="40px" height="40px">
+                            </div>
+                            <h3 class="fs-title h-03">Mentoring/ E.U. Support</h3>
+                            <h5 class="details h-05">Paying support is not only benefiting others but also emphasizing self skills and bringing brilliant ideas.</h5>
+                            <h4 class="fs-title h-04"><u>Relevant Experience:</u></h4>
+                            <h5 class="details h-05">CMMS End Users Support <br> Training Courses <br> Training Manuals Development  <br> Business Process Development <br> QMS Development  <br> Employees Mentoring Programs <br>& Others</h5>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="next-row-sides"></div>
+
+            </div>
+
+        </div>
+
+        <div class="bottom-container border-top">
+
+          <div class="area">
+             <div class="circles">
+                <p class="nth-child(1)">C</p>
+                <p class="nth-child(2)">VS</p>
+                <p class="nth-child(3)">JS</p>
+                <p class="nth-child(4)">IC</p>
+                <p class="nth-child(5)"></p>
+                <p class="nth-child(6)">CSS</p>
+                <p class="nth-child(7)">SQL</p>
+                <p class="nth-child(8)">HTML</p>
+                <p class="nth-child(9)">Flask</p>
+                <p class="nth-child(10)">Express</p>
+                <p class="nth-child(11)">NODE.JS</p>
+                <p class="nth-child(12)">REACT</p>
+                <p class="nth-child(13)">Pandas</p>
+                <p class="nth-child(14)">Python</p>
+                <p class="nth-child(15)">Bootstrap</p>
+             </div>
+          </div>
+        </div>
+
+        <footer class="footer-area footer-bg1">
+            <div class="footer-container">
+                <ul class="footer-icon">
+                    <li class="footer-icon-item">
+                        <a target="_blank" href="https://twitter.com/IMRS1311">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="footer-icon-item">
+                        <a target="_blank" href="https://www.facebook.com/">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="footer-icon-item">
+                        <a target="_blank" href="https://github.com/IMRS1311">
+                            <span class="fa-stack fa-lg">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="small">Copyright &copy; My Portfolio 2023</div>
+            </div>
+        </footer> 
+        
+      </div>
+
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="static/js/script.js"></script> 
+
+    </body>
+
+</html>

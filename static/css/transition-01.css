@@ -1,0 +1,185 @@
+
+.vmv-body {
+  padding: 0;
+  color: white;
+  scrollbar-width: none;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.pages {
+  font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 91vh;
+  background-color: white;
+  font-size: var(--font-size-fluid-0);
+  line-height: 1.4;
+  overflow-y: auto; 
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* .page--1 {} */
+
+.page--2 {
+  background-color: rgba(0, 140, 140);
+}
+
+.page--3 {
+  background-color: rgb(6, 81, 131);
+}
+
+.page--4 {
+  /* background-color: rgb(160, 100, 130); */
+  background-color: hsl(17, 44%, 45%);
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  flex:110;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 0 0;
+}
+
+header {
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-height: 280px;
+}
+
+.vmv-image1 {
+    height: 100%;
+    width: 50%;
+    margin-left: 0;
+}
+
+main {
+  width: 100%;
+  text-align: justify;
+}
+
+.main {
+  padding-top: 120px;
+}
+
+main h1 {
+    margin: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+main b {
+  font-size:1.25rem;
+}
+
+main p {
+  margin: 0.5rem 1rem;
+}
+
+@media screen and (max-width: 992px) {
+  .layout {
+    padding: 0;
+  }
+}
+
+.vmv-a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main vmv-a {
+  background-image: linear-gradient(var(--link-underline-color) 0%,
+      var(--link-underline-color) 100%);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 100% 2px;
+  font-weight: bold;
+}
+
+.buttons {
+  margin-top: 2.25em;
+}
+
+.buttons--spaced {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.buttons .vmv-button {
+  margin-right: 1em;
+}
+
+.vmv-button {
+  display: inline-block;
+  border-radius: 999vw;
+  background: transparent;
+  border: 2px solid;
+  padding: .6em 1.1em;
+  transition-property: background, color;
+  transition-duration: 150ms;
+  white-space: nowrap;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.vmv-button:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+
+/* ------------- Gradient Background And Background Footer -------------- */
+.gradient-background-vission {
+  /*background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);*/
+  background: linear-gradient(45deg, #065183, #008c8c, #afd0e0);
+  background-size: 200% 100%;
+  animation: gradient-animation 10s ease infinite;
+}
+
+.gradient-background-mission {
+  /*background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);*/
+  background: linear-gradient(225deg, #063f66, #086bad, #afd0e0);
+  background-size: 200% 100%;
+  animation: gradient-animation 10s ease infinite;
+}
+
+.gradient-background-values {
+  /*background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);*/
+  background: linear-gradient(315deg, #065183, #a55d40, #afd0e0);
+  background-size: 200% 200%;
+  animation: gradient-animation 10s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%; 
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* .gradient-background-footer-vission {
+  background: linear-gradient(300deg, #82c8c8, #9ce6e6, #bdf1f1);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+} */

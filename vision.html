@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="icon" href="images/favicon.ico">
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:ital@1&family=Sacramento&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="static/css/styles_01.css">
+        <link rel="stylesheet" href="static/css/transition-01.css">
+
+</head>
+
+<body class="vmv-body bb ">
+
+    <div class="mynavbar bg2" id="myNavBar">
+
+        <div class="nav-item nav-item-01">
+          <div class="name-item name-bar">
+            <p class="name">EMRashed</p>
+            <img class="emr" src="images/EMR.png">
+          </div>      
+        </div>
+
+        <div class="navbar-toggler" type="button" onclick="toggleNavbar()">
+          <div class="navbar-toggler-icon"></div>
+          <div class="navbar-toggler-icon"></div>
+          <div class="navbar-toggler-icon"></div>
+        </div>
+
+        <div class="nav-item menu-bar">
+
+          <ul class="links-list" id="linksList">
+            <li class="list-item">
+              <a class="link-item active" aria-current="page" href="index.html">Home</a>
+            </li>
+
+            <li class="list-item">
+              <a class="link-item" href="recents.html">Recents</a>
+            </li>
+
+            <li class="list-item">
+              <a class="link-item" href="history.html">History</a>
+            </li>
+
+            <li class="list-item dropdown">
+              <a class="link-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Commitment <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item vision" href="#" style="color: lightgray;">Vision</a>
+                  <!-- <div class="vision-screen popup-screen">
+                    <img class="vmv-image" src="images/vision.png">
+                    <p class="vmv-title">
+                        <b>My Vision</b>
+                    </p>    
+                    <br>
+                    <p class="vmv-text">
+                        To leverage the power of Python and web technologies to create innovative
+                        and user-centric solutions that empower businesses and individuals,
+                        transforming their digital experiences and contributing to a more interconnected
+                        and efficient online world.
+                    </p>
+                  </div> -->
+                </li>
+                <li><a class="dropdown-item mission" href="mission.html">Mission</a>
+                  <div class="mission-screen popup-screen">
+                    <img class="vmv-image" src="images/mission.png">
+                    <p class="vmv-title">
+                      <b>My Mission</b>
+                    </p> 
+                    <br>
+                    <p class="vmv-text">
+                      To craft robust and scalable web applications using Python and modern web technologies.
+                      By combining my coding skills, problem-solving mindset, and dedication to user experience,
+                      I strive to develop solutions that streamline processes, enhance functionality,
+                      and drive digital growth for businesses of all sizes.
+                    </p>
+                  </div>
+                </li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item values" href="values.html">Values</a>
+                    <div class="values-screen popup-screen">
+                        <img class="vmv-image2" src="images/values.png">
+                        <p class="vmv-title2">
+                          <b>My Values:</b>
+                        </p>
+                        <ul class="vmv-text2">
+                            <li><b>Innovation:</b>Embracing new technologies and methodologies to continuously enhance the quality and functionality of web applications.</li>
+                            <li><b>Quality:</b> Committing to delivering high-quality code and users' experiences.</li>
+                            <li><b>Continuous Learning:</b> Pursuing up-to-date technology trends, tools, and techniques to ensure professional sustainability and growth.</li>
+                            <li><b>User-Centricity:</b> Prioritizing the users’ experiences and needs and designing solutions that are intuitive, accessible, and responsive to their requirements.</li>
+                            <li><b>Integrity:</b> Upholding ethical standards, maintaining transparency, honesty and building trust with clients.</li>
+                        </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <li class="list-item">
+              <a class="link-item mt-1" href="My_Contact.html"> 
+                <button type="button" class="btn btn-primary" id="showContactButton">Get In Touch</button>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+    </div>
+
+    <div class="pages gradient-background-vission gradient-animation">
+        <div class="layout" id="dynamicWidth">
+          <header class="header">
+            <img class="vmv-image1" src="images/vision.png">
+          </header>
+          <main class="main">
+            <h1 class="vmv-h1">My Vision</h1>
+            <p>
+              To leverage the power of Python and web technologies to create innovative
+              and user-centric solutions that empower businesses and individuals,
+              transforming their digital experiences and contributing to a more interconnected
+              and efficient online world.
+            </p>
+            <p class="buttons buttons--spaced">
+              <a href="#" class="vmv-button vmv-a" data-swup-animation="circle">Vision</a>
+              <a href="mission.html" class="vmv-button vmv-a" data-swup-animation="square">Mission</a>
+              <a href="values.html" class="vmv-button vmv-a" data-swup-animation="gradient">Values</a>
+            </p>
+          </main>
+      </div>
+    </div>
+
+    <footer class="footer-area footer-bg2">
+          <div class="footer-container">
+            <ul class="footer-icon">
+                <li class="footer-icon-item">
+                    <a target="_blank" href="https://twitter.com/IMRS1311">
+                        <span class="fa-stack fa-lg">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+                <li class="footer-icon-item">
+                    <a target="_blank" href="https://www.facebook.com/">
+                        <span class="fa-stack fa-lg">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+                <li class="footer-icon-item">
+                    <a target="_blank" href="https://github.com/IMRS1311">
+                        <span class="fa-stack fa-lg">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <div class="small text-center text-muted fst-italic">Copyright &copy; My Portfolio 2023</div>
+        </div>
+    </footer> 
+
+    <!-- Dropdown Popup Screen-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="static/js/script.js"></script> 
+
+</body>
+
+</html>
