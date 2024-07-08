@@ -477,9 +477,10 @@ html {
 @media screen and (max-width: 576px) {
 
   .popup-screen {
-      left: 2vw; /* Position the popup to the left */
-      width: 80vw;
-      height: 320px;
+      left: 0vw; /* Position the popup to the left */
+      top: 205px;
+      width: 90vw;
+      height: 350px;
   }
   .popup-screen-01 {
     top: 205px;
@@ -504,13 +505,13 @@ html {
   }
 
   .vmv-title2 {
-    margin: -10px 35px 15px;
+    margin: 0 35px 15px;
     font-size: 0.9rem;
   }
 
   .vmv-text2 {
   margin: 0 15px;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   }
 }
 
@@ -679,6 +680,16 @@ html {
   }
 }
 
+@media screen and (max-width: 576px) {
+  .profession {
+    width: 90%;
+  }
+
+  .pro-details {
+      text-align: center;
+      font-size: 1.2rem;
+  }
+}
 
 /*------------------------------ Middle Container ---------------*/
 
@@ -817,31 +828,6 @@ html {
     }
 }
 
-/* -------------------------------------------------------------*/
-
-.details {
-  margin: 15px 10px;
-}
-
-.test-container {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    padding: 0;
-    margin: 0;
-}
-
-.test-row {
-    height: 400px;
-    width:400px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 0;
-    margin: 50px;
-}
-
 
 /* ------------------------------ Flying Circles --------------------------- */
 
@@ -904,13 +890,29 @@ html {
   }
 
   100%{
-      transform: translateY(calc(-100vh - 600px)) rotate(720deg);
+      transform: translateY(calc(100vh - 600px)) rotate(720deg);
       opacity: 0;
       border-radius: 50%;
   }
-
 }
 
+@media (max-width: 576px) {
+  @keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+        top: -10vw; /* Start off-screen */
+    }
+  
+    100%{
+        transform: translateY(-250vh) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+  }
+}
 
 .circles p:nth-child(1){
     left: 50%;
@@ -1307,12 +1309,6 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
   }
 }
 
-/* Responsive font size for larger screens */
-@media screen and (max-width: 768px) {
-  .skill-image{
-    width: 60%;
-  }
-}
 
 .skill-card {
     padding-left: 2%;
@@ -1376,6 +1372,28 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
 
   .line {
     width: 60px;
+  }
+}
+
+/* Responsive font size for larger screens */
+@media screen and (max-width: 768px) {
+  .skill-image{
+    width: 60%;
+  }
+}
+
+/* Responsive font size for larger screens */
+@media screen and (max-width: 576px) {
+  .skill-title {
+    font-size: 1.5rem;
+  }
+
+  .skill-card h4 {
+    font-size: 1.25rem;
+  }
+
+  .skill-detail{
+    font-size: 1rem;
   }
 }
 
