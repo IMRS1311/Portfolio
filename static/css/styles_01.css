@@ -1,20 +1,25 @@
 html {
     font-size: 16px;
-    width: 100vw;
+    max-width: 100vw;
+    overflow-x: hidden;
     height: 100vh;
 }
 
 .bb {
     font-family: "Humanist", sans-serif;
     color: rgb(6, 81, 131);
-    width: 100vw;
+    max-width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
     margin: 0;
+    padding: 0;
 }
 
 .flex-container {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 /*---------------------------- NAVBAR -----------------------------*/
@@ -212,6 +217,11 @@ html {
   }
 }
 
+@media screen and (max-width: 576px) {
+  .nav-item {
+    padding-left: 10px;
+  }
+}
 /* ------------------------- Dropdown Menu----------------------------------*/
 
 .caret {
@@ -480,7 +490,7 @@ html {
       left: 0vw; /* Position the popup to the left */
       top: 205px;
       width: 90vw;
-      height: 350px;
+      height: 310px;
   }
   .popup-screen-01 {
     top: 205px;
@@ -511,11 +521,51 @@ html {
 
   .vmv-text2 {
   margin: 0 15px;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   }
 }
 
+/* Responsive font size for smaller screens */
+@media screen and (max-width: 400px) {
 
+  .popup-screen {
+      left: 0vw; /* Position the popup to the left */
+      top: 205px;
+      width: 95vw;
+      height: 360px;
+  }
+  .popup-screen-01 {
+    top: 205px;
+  }
+
+  .vmv-image {
+    margin-top: -20px;
+  }
+
+  .vmv-image2 {
+    margin-top: -20px;
+  }
+
+  .vmv-title {
+    margin: -10px 20px 0;
+    font-size: 0.9rem;
+  }
+
+  .vmv-text {
+  margin: 0 20px;
+  font-size: 0.85rem;
+  }
+
+  .vmv-title2 {
+    margin: -10px 35px 5px;
+    font-size: 0.9rem;
+  }
+
+  .vmv-text2 {
+  margin: 0 15px;
+  font-size: 0.7rem;
+  }
+}
 /*------------------------------- Top Container ---------------------------------*/
 .top-container {
     background-color: #e4eaed;
@@ -687,7 +737,14 @@ html {
 
   .pro-details {
       text-align: center;
-      font-size: 1.2rem;
+      font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .pro-details {
+      text-align: center;
+      font-size: 1.15rem;
   }
 }
 
@@ -890,7 +947,7 @@ html {
   }
 
   100%{
-      transform: translateY(calc(100vh - 600px)) rotate(720deg);
+      transform: translateY(calc(-100vh - 600px)) rotate(720deg);
       opacity: 0;
       border-radius: 50%;
   }
@@ -907,8 +964,26 @@ html {
     }
   
     100%{
-        transform: translateY(-250vh) rotate(720deg);
-        opacity: 0;
+        transform: translateY(-220vh) rotate(720deg);
+        opacity: 0.1;
+        border-radius: 50%;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  @keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+        top: -10vw; /* Start off-screen */
+    }
+  
+    100%{
+        transform: translateY(-300vh) rotate(720deg);
+        opacity: 0.5;
         border-radius: 50%;
     }
   }
@@ -1215,6 +1290,14 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
   margin: 50px 0 10px;
 }
 
+.c-body .email {
+  color: darkred;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 1.4;  
+  margin: 10px 0;
+}
+
 @media screen and (max-width: 992px) {
   .contact-container {
     height: auto;
@@ -1238,6 +1321,7 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
 
 @media screen and (max-width: 768px) {
   .content {
+    width: 90vw;
     padding: 17px 0;
   }
   .c-title {
@@ -1254,13 +1338,18 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
 }
 }
 
-.c-body .email {
-    color: darkred;
-    font-style: italic;
-    font-weight: 800;
-    line-height: 1.4;  
-    margin: 10px 0;
+@media screen and (max-width: 400px) {
+  .c-title {
+    font-size: 3rem;
+    margin: 30px 0;
+  }
+  .c-body h2, .c-body h3{
+    font-size: 1.25rem;
+    margin: 30px 0 20px;
+  }
 }
+
+
 
 /* --------------------------- History -----------------------------------*/
 
