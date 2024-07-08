@@ -78,8 +78,7 @@ main {
 }
 
 main h1 {
-    margin: 1rem;
-    margin-bottom: 0.5rem;
+    margin: 1rem 1rem 0.5rem;
     font-size: 2rem;
     line-height: 1.2;
 }
@@ -89,20 +88,10 @@ main b {
 }
 
 main p {
+  font-size: 1.25rem;
   margin: 0.5rem 1rem;
 }
 
-@media screen and (max-width: 992px) {
-  .layout {
-    padding: 0;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .main {
-    padding-top: 30px;
-  }
-}
 
 .vmv-a {
   text-decoration: none;
@@ -146,6 +135,44 @@ main vmv-a {
 
 .vmv-button:hover {
   background: rgba(255, 255, 255, 0.05);
+}
+
+
+@media screen and (max-width: 992px) {
+  .layout {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main {
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header {
+    padding-bottom: 0;
+  }
+  .main {
+    padding-top: 0;
+  }
+
+  main h1 {
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+  main b {
+    font-size: 1rem;
+  }
+  main p {
+    font-size: 1rem;
+    margin: 0.5rem;
+  }
+  .buttons {
+    margin-top: 1.5rem;
+  }
 }
 
 

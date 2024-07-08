@@ -222,6 +222,11 @@ html {
     padding-left: 10px;
   }
 }
+@media screen and (max-width: 400px) {
+  .nav-item {
+    padding-left: 5px;
+  }
+}
 /* ------------------------- Dropdown Menu----------------------------------*/
 
 .caret {
@@ -982,7 +987,7 @@ html {
     }
   
     100%{
-        transform: translateY(-300vh) rotate(720deg);
+        transform: translateY(-400vh) rotate(720deg);
         opacity: 0.5;
         border-radius: 50%;
     }
@@ -1254,25 +1259,27 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
-  height: 95vh;
+  min-height: 100vh;
 }
 
 .content {
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
   font-family: "Humanist", sans-serif;
   color: rgba(6, 81, 131);
   max-width: 900px;
   margin: 0 5vw;
-  padding: 15px;
+  padding: 10px;
 }
 
 .c-title {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: bold;
-    margin: 110px 0 50px;
+    margin: 100px 0 40px;
 }
 
 /* ---------------------------- c-body  ---------------------------------*/
@@ -1287,7 +1294,7 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
   font-size: 1.75rem;
   font-weight: 500;
   line-height: 1.4;
-  margin: 50px 0 10px;
+  margin: 40px 0 10px;
 }
 
 .c-body .email {
@@ -1308,14 +1315,14 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
   }
   .c-title {
     font-size: 4rem;
-    margin: 60px 0;
+    margin: 40px 0;
 }
   .c-body h2{
     font-size: 1.75rem;
   }
   .c-body h3, h3{
     font-size: 1.5rem;
-    margin: 50px 0 20px;
+    margin: 30px 0 20px;
   }
 }
 
@@ -1324,9 +1331,7 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
     width: 90vw;
     padding: 17px 0;
   }
-  .c-title {
-    margin: 50px 0;
-}
+
 }
 
 @media screen and (max-width: 576px) {
@@ -1348,7 +1353,6 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
     margin: 30px 0 20px;
   }
 }
-
 
 
 /* --------------------------- History -----------------------------------*/
@@ -1473,6 +1477,9 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
 
 /* Responsive font size for larger screens */
 @media screen and (max-width: 576px) {
+  .skill-card {
+    gap: 20px;
+  }
   .skill-title {
     font-size: 1.5rem;
   }
@@ -1485,6 +1492,23 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
     font-size: 1rem;
   }
 }
+
+/* Responsive font size for larger screens */
+@media screen and (max-width: 400px) {
+  .skill-title {
+    font-size: 1.25rem;
+  }
+
+  .skill-card h4 {
+    font-size: 1.2rem;
+  }
+
+  .skill-detail{
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
+}
+
 
 /*-------------------------------- Recents -----------------------*/
 
@@ -1537,6 +1561,14 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
       width: 80%;
       height: 50vw;
       margin: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+      width: 90%;
+      height: 55vw;
+      margin: 10px;
   }
 }
 
@@ -1620,6 +1652,13 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
     .card-text  {
         font-size: 1rem;
     }
+}
+
+@media (max-width: 400px) {
+  .card-text  {
+      font-size: 0.9rem;
+      margin: 15px 0;
+  }
 }
 
 /* Default styles for the button */
