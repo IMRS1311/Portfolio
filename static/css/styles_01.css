@@ -1661,6 +1661,16 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
   }
 }
 
+/* ------------------- Card Button -----*/
+
+.card1-link {
+  color:bisque;
+}
+
+.card1-link:hover {
+  color:#0dcaf0;
+}
+
 /* Default styles for the button */
 .card1-btn {
   /* Your default styles here */
@@ -1669,7 +1679,7 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
 /* Media query for small width screens */
 @media (max-width: 576px) {
   .card1-btn {
-    height: 28px;
+    height: 35px;
     padding: 5px 10px;
     line-height: 1;
   }
