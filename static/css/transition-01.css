@@ -12,10 +12,7 @@
 
 .pages {
   font-family: -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif;
-  display: flex;
-  flex-direction: column;
   text-align: center;
-  justify-content: center;
   width: 100%;
   height: 91vh;
   background-color: white;
@@ -43,8 +40,9 @@
 .layout {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: space-around;
   align-items: center;
+  gap: 10px;
   flex:110;
   width: 100%;
   margin: 0 auto;
@@ -150,9 +148,6 @@ main vmv-a {
 }
 
 @media screen and (max-width: 400px) {
-  .pages {
-    overflow-y:scroll;
-  }
   
   header {
     padding-bottom: 0;
