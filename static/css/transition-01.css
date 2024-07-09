@@ -21,7 +21,6 @@
   background-color: white;
   font-size: var(--font-size-fluid-0);
   line-height: 1.4;
-  overflow-y: auto; 
   flex: 1;
   overflow-y: auto;
 }
@@ -151,6 +150,10 @@ main vmv-a {
 }
 
 @media screen and (max-width: 400px) {
+  .pages {
+    overflow-y:scroll;
+  }
+  
   header {
     padding-bottom: 0;
   }
@@ -164,10 +167,10 @@ main vmv-a {
     line-height: 1.2;
 }
   main b {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   main p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin: 0.5rem;
   }
   .buttons {
