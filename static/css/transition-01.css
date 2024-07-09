@@ -148,7 +148,13 @@ main vmv-a {
 }
 
 @media screen and (max-width: 400px) {
+  .vmv-body {
+    overflow:scroll;
+  }
   
+  .values-header {
+    padding-top: 80px;
+  }
   header {
     padding-bottom: 0;
   }

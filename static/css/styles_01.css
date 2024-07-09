@@ -1352,6 +1352,9 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
     font-size: 1.25rem;
     margin: 30px 0 20px;
   }
+  .c-body .email {
+    font-size: 1.2rem;
+  }
 }
 
 
